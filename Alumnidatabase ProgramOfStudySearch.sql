@@ -1,0 +1,5 @@
+use alumnidatabaseks;
+
+SELECT BROTHERS.FirstName, BROTHERS.LastName, BROTHERS.GraduationYear, BROTHERS.PhoneNumber, STUDY_PROGRAM.ProgramName, STUDY_PROGRAM.Major, STUDY_PROGRAM.Minor, STUDY_PROGRAM.Concentration, STUDY_PROGRAM.HonorSocietyMember
+FROM BROTHERS INNER JOIN STUDY_PROGRAM ON BROTHERS.BrotherID = STUDY_PROGRAM.BrotherID
+WHERE STUDY_PROGRAM.ProgramName = 'Economics';
